@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/service
+    username: root
+    password: tombo
+  session:
+    store-type: jdbc
+    jdbc:
+      initialize-schema: always
+  jpa:
+    generate-ddl: true
+  sql:
+    init:
+      mode: always
